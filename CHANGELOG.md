@@ -1,5 +1,22 @@
 # All in One Changelog
 
+## [0.3.0] - 2025-08-25
+
+### What
+
+- Japanese text summarization feature
+  - Automatically summarizes selected text in Japanese
+  - Outputs 3-10 bullet points with "- " prefix
+  - Preserves important numbers, names, dates, and URLs
+  - No additional information or opinions added
+  - Copy summary results to clipboard
+  - Uses OpenAI API with customizable model and endpoint settings
+
+### Why
+
+- Need for quick Japanese text summarization without switching contexts
+- Bullet-point format makes it easy to grasp key information
+
 ## [0.2.0] - 2025-08-24
 
 ### What

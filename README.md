@@ -39,3 +39,23 @@ Ask a single question and get a concise, intelligent answer from AI.
 2. Enter your question
 3. Review the AI's answer
 4. Copy the answer if needed
+
+### 3. Summarize Selected Text in Japanese
+
+Summarize the selected text in Japanese and display it in bullet-point format.
+
+**Features:**
+
+- Specializes in summarizing in Japanese
+- Outputs 3-10 bullet points (each item starts with "- ")
+- Preserves important numbers, names, dates, and URLs
+- Does not add any new information or opinions
+- Allows you to copy the summary to the clipboard
+- Uses the OpenAI API (model and endpoint can be customized)
+
+**How to use:**
+
+1. Select the text you want to summarize
+2. Run the command (Summarize Selected Text in Japanese)
+3. The generated summary will be displayed in bullet-point format
+4. You can copy the summary to the clipboard from the action panel

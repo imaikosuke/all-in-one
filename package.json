@@ -104,6 +104,37 @@
           "required": false
         }
       ]
+    },
+    {
+      "name": "summarize-text",
+      "title": "Summarize Selected Text in Japanese",
+      "description": "Summarize the selected text in Japanese and display in Raycast",
+      "mode": "view",
+      "preferences": [
+        {
+          "name": "apiKey",
+          "title": "AI Service API Key",
+          "description": "API Key is used to authenticate with OpenAI or other AI service",
+          "type": "password",
+          "required": true
+        },
+        {
+          "name": "endpoint",
+          "title": "Custom API Endpoint",
+          "description": "Override the default API endpoint",
+          "type": "textfield",
+          "default": "https://api.openai.com/v1",
+          "required": false
+        },
+        {
+          "name": "model",
+          "title": "Model Name",
+          "description": "Model name to use for the AI service",
+          "type": "textfield",
+          "default": "gpt-4o-mini",
+          "required": false
+        }
+      ]
     }
   ],
   "dependencies": {
