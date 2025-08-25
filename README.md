@@ -59,3 +59,21 @@ Summarize the selected text in Japanese and display it in bullet-point format.
 2. Run the command (Summarize Selected Text in Japanese)
 3. The generated summary will be displayed in bullet-point format
 4. You can copy the summary to the clipboard from the action panel
+
+### 4. Translate Text (JA⇄EN)
+
+Translate selected text between Japanese and English with a single command.
+
+**Features:**
+
+- Automatically detects if the input is Japanese or English using AI
+- Translates Japanese → English or English → Japanese accordingly
+- Copies the translation to the clipboard
+- Replace the selection with the translation
+- Uses the OpenAI API (model and endpoint can be customized)
+
+**How to use:**
+
+1. Select the text you want to translate and run the command
+2. The translation will be shown in Raycast
+3. Use the action panel to copy the result or replace the selected text

@@ -1,5 +1,23 @@
 # All in One Changelog
 
+## [0.4.0] - 2025-08-25
+
+### What
+
+- Japanese ⇄ English translation feature
+  - Automatically detects input language (Japanese or English) using AI
+  - Preserves meaning, tone, and formatting (line breaks, lists)
+  - Keeps numbers, names, URLs unchanged
+  - Copy translation results to clipboard
+  - Replace selected text with translation
+  - Uses OpenAI API with customizable model and endpoint settings
+
+### Why
+
+- Need for quick bidirectional translation without switching to external translation tools
+- Seamless workflow integration for multilingual content creation and reading
+- Eliminate context switching when working with Japanese and English text
+
 ## [0.3.0] - 2025-08-25
 
 ### What

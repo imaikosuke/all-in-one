@@ -57,6 +57,37 @@
       ]
     },
     {
+      "name": "translate-text",
+      "title": "Translate Text (JA⇄EN)",
+      "description": "Translate selected text between Japanese and English",
+      "mode": "view",
+      "preferences": [
+        {
+          "name": "apiKey",
+          "title": "AI Service API Key",
+          "description": "API Key is used to authenticate with OpenAI or other AI service",
+          "type": "password",
+          "required": true
+        },
+        {
+          "name": "endpoint",
+          "title": "Custom API Endpoint",
+          "description": "Override the default API endpoint",
+          "type": "textfield",
+          "default": "https://api.openai.com/v1",
+          "required": false
+        },
+        {
+          "name": "model",
+          "title": "Model Name",
+          "description": "Model name to use for the AI service",
+          "type": "textfield",
+          "default": "gpt-4o-mini",
+          "required": false
+        }
+      ]
+    },
+    {
       "name": "ask-ai",
       "title": "Ask AI",
       "description": "Ask questions to AI and get intelligent answers",
