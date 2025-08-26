@@ -14,13 +14,15 @@ Extracts schedule information from text and generates a Google Calendar event UR
 - Uses the OpenAI API for advanced natural language processing
 - Supports Japanese and English
 - Automatically generates a Google Calendar template URL
+- Identifies user's own events from text containing multiple people's schedules
 
 **How to use:**
 
-1. Select text that contains schedule information
-2. Run the command
-3. Google Calendar opens with the generated URL
-4. Review the event and save
+1. Configure your user name in the extension preferences (required)
+2. Select text that contains schedule information
+3. Run the command
+4. Google Calendar opens with the generated URL
+5. Review the event and save
 
 ### 2. Ask AI
 

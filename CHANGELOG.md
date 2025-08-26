@@ -1,5 +1,18 @@
 # All in One Changelog
 
+## [0.4.1] - 2025-08-25
+
+### What
+
+- Enhanced Text to Calendar feature
+  - Added required "User Name" setting to identify the user when processing text with multiple people's schedules
+  - LLM now knows who the user is and can extract only the user's own events
+
+### Why
+
+- When selecting text containing multiple people's schedules, the LLM needs to know which person the user is
+- This prevents confusion and ensures only the user's own events are extracted and registered
+
 ## [0.4.0] - 2025-08-25
 
 ### What
