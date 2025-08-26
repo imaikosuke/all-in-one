@@ -21,6 +21,13 @@
           "required": true
         },
         {
+          "name": "userName",
+          "title": "User Name",
+          "description": "User name to use for the AI service",
+          "type": "textfield",
+          "required": true
+        },
+        {
           "name": "endpoint",
           "title": "Custom API Endpoint",
           "description": "Overide the default API endpoint",

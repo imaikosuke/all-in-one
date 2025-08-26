@@ -50,13 +50,14 @@ const calendarEventSchema = {
 export default async function main() {
   try {
     const apiKey = getPreferenceValues().apiKey;
+    const userName = getPreferenceValues().userName;
     const endpoint = getPreferenceValues().endpoint || "https://api.openai.com/v1";
     const language = getPreferenceValues().language || "Japanese";
     const model = getPreferenceValues().model || "gpt-4o-mini";
 
     showToast({ style: Toast.Style.Animated, title: "Extracting..." });
     const selectedText = await getSelectedText();
-    const json = await ai(selectedText, apiKey, language, endpoint, model);
+    const json = await ai(selectedText, apiKey, userName, language, endpoint, model);
     if (!json) {
       console.error("Extraction failed");
       throw new Error("Extraction failed");
@@ -78,7 +79,7 @@ export default async function main() {
   }
 }
 
-async function ai(text: string, openaiKey: string, language: string, endpoint: string, model: string) {
+async function ai(text: string, openaiKey: string, userName: string, language: string, endpoint: string, model: string) {
   // get current date and time to string format, to let the LLM know the current date and time
   // date format: YYYY-MM-DD
   const date_str = new Date().toISOString().split("T")[0];
@@ -105,6 +106,7 @@ Extract schedule information from the text provided by the user.
 }
 
 Note:
+* User's name is "${userName}"
 * Output in ${language}
 * Current date: ${date_str}, Current time: ${time_str}, Current week day: ${week_day}, try to set the event date and time based on the current date and time
 * Do not include any content other than JSON format in the output
