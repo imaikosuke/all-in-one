@@ -79,7 +79,14 @@ export default async function main() {
   }
 }
 
-async function ai(text: string, openaiKey: string, userName: string, language: string, endpoint: string, model: string) {
+async function ai(
+  text: string,
+  openaiKey: string,
+  userName: string,
+  language: string,
+  endpoint: string,
+  model: string,
+) {
   // get current date and time to string format, to let the LLM know the current date and time
   // date format: YYYY-MM-DD
   const date_str = new Date().toISOString().split("T")[0];
