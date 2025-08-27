@@ -173,6 +173,53 @@
           "required": false
         }
       ]
+    },
+    {
+      "name": "quick-save-to-obsidian",
+      "title": "Quick Save to Obsidian",
+      "description": "Create a new Obsidian note from the active tab URL and title",
+      "mode": "no-view",
+      "preferences": [
+        {
+          "name": "vault",
+          "title": "Obsidian Vault Name",
+          "description": "Exact name of the target Obsidian vault",
+          "type": "textfield",
+          "required": true
+        },
+        {
+          "name": "folder",
+          "title": "Target Folder in Vault",
+          "description": "Folder path inside the vault (no leading slash)",
+          "type": "textfield",
+          "default": "Bookmarks",
+          "required": false
+        },
+        {
+          "name": "defaultTags",
+          "title": "Default Tags (comma-separated)",
+          "description": "Example: bookmark",
+          "type": "textfield",
+          "default": "bookmark",
+          "required": false
+        },
+        {
+          "name": "useDomainTag",
+          "label": "Auto Tag by Domain",
+          "description": "Add the domain as a tag (e.g., github, zenn)",
+          "type": "checkbox",
+          "default": true,
+          "required": false
+        },
+        {
+          "name": "filenameFormat",
+          "title": "Filename Format",
+          "description": "Placeholders: {{yyyy-MM-dd}}, {{domain}}, {{slug}}",
+          "type": "textfield",
+          "default": "{{slug}}",
+          "required": false
+        }
+      ]
     }
   ],
   "dependencies": {
