@@ -79,3 +79,30 @@ Translate selected text between Japanese and English with a single command.
 1. Select the text you want to translate and run the command
 2. The translation will be shown in Raycast
 3. Use the action panel to copy the result or replace the selected text
+
+### 5. Quick Save to Obsidian
+
+Create a new Obsidian note from the active browser tab (or clipboard URL).
+
+**Features:**
+
+- Grabs URL and title from Safari, Google Chrome, Arc, Brave, or Edge
+- Falls back to clipboard URL when no active tab is available
+- Adds YAML front matter with created date and tags
+- **Auto-tag by domain** (e.g., github, zenn, twitter, youtube) plus your default tags
+- Configurable vault, target folder, and filename format
+- Filename placeholders: `{{yyyy-MM-dd}}`, `{{yyyyMMdd-HHmmss}}`, `{{domain}}`, `{{slug}}`
+
+**How to use:**
+
+1. Set your Obsidian vault name in the command preferences (required)
+2. Optionally set:
+   - Target folder inside the vault (default: `Bookmarks`)
+   - Default tags (comma-separated, default: `bookmark`)
+   - Auto tag by domain (on by default)
+   - Filename format (default: `{{slug}}`)
+3. Open a page in a supported browser or copy a URL to the clipboard
+4. Run the command (Quick Save to Obsidian)
+5. Obsidian opens a new note prefilled with the URL and template sections
+
+Note: Use a folder path that exists in your vault.

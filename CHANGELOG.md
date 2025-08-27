@@ -1,5 +1,23 @@
 # All in One Changelog
 
+## [0.5.0] - 2025-08-27
+
+### What
+
+- Quick Save to Obsidian
+  - Creates a new Obsidian note from the active browser tab or clipboard URL
+  - Supports Safari, Google Chrome, Arc, Brave, and Microsoft Edge
+  - YAML front matter with `created` and `tags`
+  - Default tags plus optional auto-tag by domain (e.g., github, zenn, twitter)
+  - Configurable vault name, target folder, and filename format
+  - Filename placeholders: `{{yyyy-MM-dd}}`, `{{yyyyMMdd-HHmmss}}`, `{{domain}}`, `{{slug}}`
+
+### Why
+
+- Quickly capture web pages into Obsidian without manual copy & paste
+- Keep links organized with consistent tags and filenames
+- Reduce friction when bookmarking or taking notes from articles/videos
+
 ## [0.4.1] - 2025-08-25
 
 ### What
